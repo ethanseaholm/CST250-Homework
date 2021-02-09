@@ -1,0 +1,32 @@
+QUESTION 1:
+
+package com.mycompany.homework1_seaholm;
+
+/**
+ *
+ * @author Ethan
+ */
+public class MainClass {
+    
+    public static void main(String[] args) {
+        
+        String[] array1 = {"word1", "word2", "word3", "word4"};
+        String[] array2 = array1;
+        
+        for (String element: array2)
+        System.out.println(element); // array2 holds all of the data that array1 holds and prints it
+        
+    array1[0] = "\n_word1";
+    array1[1] = "_word2";
+    array1[2] = "_word3";
+    array1[3] = "_word4"; // reassigned the contents of array1 without interfering with its initial contents used and printed by array2
+        
+        for (String element: array1)
+            System.out.println(element);
+        
+    }
+    
+}
+
+QUESTION 2:
+
