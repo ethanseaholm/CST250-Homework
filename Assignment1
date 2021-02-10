@@ -28,7 +28,53 @@ public class MainClass {
     
 }
 
-QUESTION 4:
+QUESTION 2: ---------------------------
+
+
+
+QUESTION 3 (the one we did in class): ---------------------------
+
+public class MainClass {
+    
+    public static void main(String[] args) {
+
+        int[] array = {3, 5, 8, 9, 23, 35};
+        int count = 0;
+        
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] % 2 != 0) {
+                count = count + 1;
+            }
+        }
+        
+        System.out.println("Number of odd numbers in the array: " + count + " out of " + array.length + " numbers");
+    }
+    
+    public static int[] dropOddNumbers(int[] array) {
+        
+        int count = 0;
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] % 2 == 0) {
+                count = count + 1;
+            }
+        }
+        
+        int[] resultArray = new int[count];
+        int resultArrayIndex = 0;
+        
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] % 2 != 0) {
+                continue;
+            }
+            resultArray[resultArrayIndex] = array[index];
+            resultArrayIndex++;
+        }
+        
+        return resultArray;
+    }
+}
+
+QUESTION 4: ---------------------------
 
 package com.mycompany.homework1_seaholm;
 
@@ -42,7 +88,8 @@ public class MainClass {
         
         int[] inputArray = {45, 87, 84, 99};
         highestElement(inputArray);
-        System.out.println(highestElement);
+        int result = highestElement(inputArray);
+        System.out.println(result);
         
     }
 
