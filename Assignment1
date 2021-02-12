@@ -30,30 +30,6 @@ public class MainClass {
 
 QUESTION 2 (I couldn't get this one): ---------------------------
 
-package com.mycompany.homework1_seaholm;
-
-/**
- *
- * @author Ethan
- */
-public class MainClass {
-    
-    public static void main(String[] args) {
-        
-        int[] inputArray = {1, 2, 3, 4, 5, 6};
-        int n = 0;
-        removeElement(inputArray, n);
-        for(int element : newArray)
-            System.out.println(element);
-        
-    }
-
-public static int[] removeElement(int[] inputArray, int n){
-    
-    }
-}
-
-
 QUESTION 3 (the one we did in class): ---------------------------
 
 public class MainClass {
