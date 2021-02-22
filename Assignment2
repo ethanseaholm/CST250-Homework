@@ -1,0 +1,22 @@
+package com.mycompany.homework2_seaholm;
+
+public class MainClass {
+    
+    public static void main(String[] args){
+        
+        int result = addAllDigits(123);
+        System.out.println(result);
+        
+    }
+
+    public static int addAllDigits(int inputNumber){
+        
+        int value1 = (123 % 10); // equals 3
+        int value2 = (123 / 10); // equals 12--however, value2 will not be used. it is only to find the remainder to use for value 3 (being 12)
+        int value3 = (12 % 10); // equals 2
+        int value4 = (12 / 10); // equals 1
+        int sum = (value1 + value3 + value4);
+        
+        return sum;
+    }
+}
